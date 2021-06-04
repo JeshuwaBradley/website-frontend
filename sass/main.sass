@@ -1,0 +1,491 @@
+
+$white: #fff
+$tangerineYellow: #FDC800
+$cyan: #00B2B2
+$silver: #BDBDBD
+$saphire: #002147
+$blueCharcoal: #212529
+$aliceBlue: #F0F4F9
+$font2: sans-serif
+
+*
+  margin: 0
+  padding: 0
+
+h1
+  font-size: 3rem
+  color: $saphire
+  @media screen and (max-width: 600px)
+    font-size: 2rem
+
+h3
+  font-family: $font2
+  font-size: 2rem
+  @media screen and (max-width: 600px)
+    font-size: 1.5rem
+
+small
+  font-family: $font2
+
+p
+  font-family: $font2
+
+.yellow
+  color: $tangerineYellow
+
+.header
+  width: 100%
+
+
+.header-contact
+  height: 1rem
+  background-color: $tangerineYellow
+
+.navbar
+  background-color: $aliceBlue
+
+.nav
+  height: 80px
+  display: flex
+  justify-content: space-between
+  padding: 0.5rem calc((100vw - 1000px) / 2)
+  z-index: 10
+
+.bars
+  color: $saphire
+  display: none
+  @media screen and (max-width: 767px)
+    display: block
+    border: none
+    background-color: $aliceBlue
+    padding: 1rem
+    // position: absolute
+    // top: 0
+    // right: 0
+    // transform: translate(-100%, 75%)
+    font-size: 1.5rem
+    cursor: pointer
+
+
+.nav-link
+  color: $saphire
+  font-size: 1.5rem
+  display: flex
+  align-items: center
+  text-decoration: none
+  padding: 0.1rem 1rem
+  height: 100%
+  cursor: pointer
+
+.nav-menu
+  display: flex
+  align-items: center
+  margin-right: 24px
+  @media screen and (max-width: 768px)
+    display: none
+
+
+.nav-btn
+  display: flex
+  align-items: center
+  margin-right: 24px
+
+.nav-btn-link
+  border-radius: 6px
+  font-size: 1.5rem
+  background: $tangerineYellow
+  color: $saphire
+  border: none
+  outline: none
+  cursor: pointer
+  transition: all 0.2s ease-in-out
+  text-decoration: none
+  padding: 0.5rem 1rem
+
+.nav-btn-link-search
+  border-radius: 6px
+  background: $white
+  color: $saphire
+  border: 0.5px solid $blueCharcoal
+  outline: none
+  cursor: pointer
+  transition: all 0.2s ease-in-out
+  text-decoration: none
+  padding: 0.5rem 1rem
+
+.hero-banner
+  background: $aliceBlue
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $saphire
+  @media screen and (max-width: 800px)
+    display: block
+    align-items: center
+    justify-content: center
+    text-align: center
+
+
+.hero-banner-image
+  margin: 1rem 2rem
+  width: 400px
+  height: 400px
+  justify-content: center
+  @media screen and (max-width: 500px)
+    margin: 0
+    // width: 200px
+    height: 250px
+  img
+    @media screen and (max-width: 500px)
+      margin: 1rem 0
+      padding-top: 1rem
+      width: 200px
+      height: 200px
+
+.hero-banner-content
+  margin: 1rem 2rem
+  @media screen and (max-width: 800px)
+    margin: 0 2rem
+    padding-top: 1rem
+
+.btn
+  padding: 1rem 2rem
+  background-color: $white
+  border: 1px solid $silver
+  border-radius: 5px
+  color: $saphire
+  font-weight: 600
+  margin: 1rem 1rem 0 0
+
+.btn-yellow
+  padding: 1rem 2rem
+  background-color: $tangerineYellow
+  border: none
+  border-radius: 5px
+  color: $saphire
+  font-weight: 600
+  margin: 1rem 1rem 0 0
+
+.banner-countdown
+  position: relative
+  justify-content: center
+
+.banner-countdown-1
+  height: 10rem
+  background-color: $aliceBlue
+
+.countdown
+  background-color: $saphire
+  padding: 0.5rem 2rem
+  width: 60rem
+  margin: -5rem auto 5rem auto
+  display: flex
+  align-items: center
+  justify-content: space-around
+  border: none
+  border-radius: 8px
+  color: $white
+  @media screen and (max-width: 600px)
+    width: auto
+    margin: -5rem auto 5rem auto
+    flex-direction: column
+  h4
+    text-transform: capitalize
+    margin: 0 0.5rem
+    font-size: 1.5rem
+
+.info
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0.5rem
+
+.time
+  display: flex
+  margin: 0.5rem
+
+.contents-container1
+  text-align: center
+  margin-top: 3rem
+  margin-bottom: 5rem
+  color: $saphire
+  @media screen and (max-width: 600px)
+    margin-top: 1rem
+
+  h1
+    margin-bottom: 1.5rem
+    font-weight: bold
+
+.cards
+  display: flex
+  align-content: space-around
+  justify-content: center
+  flex-direction: row
+  flex-wrap: wrap
+
+.card
+  border: none
+  margin: 1rem
+  border-radius: 8px
+  text-align: justify
+  z-index: 10
+  box-shadow: 0 5px 16px rgba(0,0,0, 0.1)
+
+.card-body
+  position: relative
+  height: 6rem
+
+  h3
+    font-size: 1.5rem
+    padding-top: 2rem
+    padding-left: 1.5rem
+
+  small
+    padding-top: 1.5rem
+    padding-left: 1.5rem
+
+
+.icon-outer
+  padding: 10px
+  background-color: $silver
+  position: absolute
+  bottom: 85%
+  left: 10%
+
+.icon-inner
+  height: 50px
+  width: 50px
+  background-color: $cyan
+
+.card-img-top
+  width: 100%
+  height: auto
+  object-fit: fill
+
+.contents-container2
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 3rem
+  margin-bottom: 3rem
+  flex-wrap: wrap
+  @media screen and (max-width: 600px)
+    padding: 1rem
+  h4
+    font-family: $font2
+    color: $saphire
+    margin-top: 0.5rem
+
+
+.contents-container2-image
+  width: 25rem
+  margin-right: 2rem
+  position: relative
+  img
+    width: 100%
+    height: auto
+    object-fit: fill
+  @media screen and (max-width: 600px)
+    margin-right: 0
+    margin-bottom: 3rem
+    width: 20rem
+
+
+.name-tag
+  text-align: center
+  padding: 0.5rem 1rem
+  background-color: $white
+  width: 15rem
+  border-radius: 10px
+  z-index: 10
+  position: absolute
+  left: 4rem
+  bottom: -1.5rem
+  box-shadow: 0 5px 16px rgba(0,0,0, 0.1)
+  @media screen and (max-width: 600px)
+    left: 1.5rem
+    bottom: -1.5rem
+
+.yellow-icon
+  position: absolute
+  width: 6rem
+  height: 6rem
+  bottom: 17rem
+  right: 21rem
+  background-color: $tangerineYellow
+  div
+    position: relative
+    width: 5rem
+    img
+      position: absolute
+      top: 0.8rem
+      left: 1.3rem
+  @media screen and (max-width: 600px)
+    bottom: 12rem
+    right: 16rem
+
+
+.contents-container2-content
+  width: 30rem
+  word-wrap: normal
+  .yellow
+    margin-bottom: 1.5rem
+  @media screen and (max-width: 800px)
+    text-align: center
+
+.student-course
+  background-color: $silver
+  padding: 0.33rem 0.5rem
+  border-radius: 5px
+  display: flex
+
+
+.student-course-description
+  display: inline-block
+  height: 100%
+  margin-left: 0.5rem
+  h4
+    margin-bottom: 1rem
+  p
+    font-family: $font2
+
+.contents-container3
+  background-color: $aliceBlue
+  background-image: url(/images/img2.svg)
+  background-repeat: no-repeat
+  background-position: center
+  // height: 500px
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding-top: 2rem
+  padding-bottom: 2rem
+  flex-wrap: wrap
+  p
+    font-family: 'Merriweather', serif
+    font-size: 2rem
+    color: $saphire
+    margin-bottom: 1rem
+  h4
+    text-transform: uppercase
+    color: $cyan
+    font-family: $font2
+
+.achievement
+  margin-left: 1.5rem
+  margin-right: 1.5rem
+
+.contents-container4
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-top: 3rem
+  padding-bottom: 3rem
+  flex-wrap: wrap
+  h4
+    font-size: 1.5rem
+    font-family: $font2
+
+.newsletter
+  @media screen and (max-width: 800px)
+    text-align: center
+    h4
+      font-size: 1rem
+
+.newsletter-image
+  img
+    width: 400px
+    height: 400px
+    @media screen and (max-width: 800px)
+      width: 200px
+      height: 200px
+
+.newsletter-form
+  border: 1px solid $silver
+  justify-content: center
+  padding: 0.5rem
+  margin-top: 1rem
+  border-radius: 5px
+  @media screen and (max-width: 600px)
+    border: none
+  .btn-yellow
+    margin: 0
+    font-size: 1.25rem
+    @media screen and (max-width: 500px)
+      font-size: 1rem
+      margin-top: 1rem
+
+
+.newsletter-input
+  border: none
+  font-size: 1.5rem
+  width: 30rem
+  color: $saphire
+  &:focus
+    outline: none
+  @media screen and (max-width: 800px)
+    font-size: 1rem
+    width: 15rem
+    padding: 0.5rem
+    border-radius: 5px
+    border: 1px solid $silver
+
+.footer
+  background: $saphire
+  padding: 3rem 0 0 0
+
+.wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  max-width: 1000px
+  margin: 0 auto
+
+.column
+  display: flex
+  flex-direction: column
+  text-align: left
+  margin-left: 60px
+  @media screen and (max-width: 600px)
+    text-align: center
+    margin-left: 0
+
+.row
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+  grid-gap: 20px
+  @media (max-width: 1000px)
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+
+
+.title
+  font-size: 24px
+  color: $white
+  margin-bottom: 40px
+  font-weight: bold
+
+.link
+  color: $white
+  margin-bottom: 20px
+  font-size: 18px
+  display: inline
+  text-decoration: none
+
+.fa
+  font-size: 18px
+  display: inline
+  margin-right: 16px
+
+.media
+  width: 60rem
+  padding: 0 1rem
+  margin: 1rem auto 0 auto
+  background-color: $tangerineYellow
+  height: 5rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @media screen and (max-width: 600px)
+    width: 15rem
+    justify-content: center
